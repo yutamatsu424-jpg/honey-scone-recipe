@@ -96,6 +96,10 @@
       padding-left: 1.2em;
       font-weight: 700;
     }
+    .ingredient-list li:last-child {
+      grid-column: 2;
+    }
+
     .ingredient-list li::before {
       content: "";
       position: absolute;
@@ -267,6 +271,7 @@
       .hero-title { margin-bottom: 20px; }
       .ingredients { padding: 20px 18px; }
       .ingredient-list { grid-template-columns: 1fr; gap: 10px; }
+      .ingredient-list li:last-child { grid-column: auto; }
       .video-card { grid-template-columns: 82px 1fr; gap: 12px; }
       .steps { grid-template-columns: 1fr; gap: 14px; }
       .step h3 { font-size: 1.05rem; }
@@ -291,10 +296,11 @@
           <li>薄力粉 200g</li>
           <li>生クリーム 155g <span class="ingredient-note">脂肪分 41〜42%</span></li>
           <li>ベーキングパウダー 小さじ2</li>
-          <li>仕上げ用：生クリーム 少し</li>
-          <li>塩 3つまみ</li>
-          <li>打ち粉（薄力粉） 少し</li>
           <li>はちみつ 40g</li>
+          <li>塩 3 つまみ</li>
+          <li>打ち粉（薄力粉） 少し</li>
+
+          <li>仕上げ用（生クリーム） 少し</li>
         </ul>
 
         <div class="video-card">
@@ -328,7 +334,7 @@
           <img src="assets/step-02.jpg" alt="生クリームとはちみつを加えて混ぜている様子" loading="lazy">
           <div class="step-body">
             <h3><span class="step-number">STEP 2</span> 生クリームとはちみつを加える</h3>
-            <p>はちみつと生クリームを加えて切るようにまぜる。</p>
+            <p>生クリームとはちみつを加えて切るようにまぜる。</p>
             <p class="caution">＊こねないように注意。</p>
           </div>
         </article>
@@ -337,7 +343,7 @@
           <img src="assets/step-03.jpg" alt="まとまった生地を打ち粉をした台に出した様子" loading="lazy">
           <div class="step-body">
             <h3><span class="step-number">STEP 3</span> 台に出す</h3>
-            <p>まとまったら打ち粉をした台へ。</p>
+            <p>ある程度まとまったら打ち粉をした台に出す。</p>
           </div>
         </article>
 
@@ -369,7 +375,7 @@
           <img src="assets/step-07.jpg" alt="天板に並べた生地に生クリームを塗っている様子" loading="lazy">
           <div class="step-body">
             <h3><span class="step-number">STEP 7</span> 生クリームをぬる</h3>
-            <p>生クリームをうすくぬる。</p>
+            <p>上面に生クリームをうすくぬる。</p>
           </div>
         </article>
 
