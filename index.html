@@ -276,14 +276,14 @@
       }
       .ingredient-list li:last-child { grid-column: auto; }
 
-      /* PC表示の左列→右列の順番をスマホでも維持 */
-      .ingredient-list li:nth-child(1) { order: 1; }
-      .ingredient-list li:nth-child(3) { order: 2; }
-      .ingredient-list li:nth-child(5) { order: 3; }
-      .ingredient-list li:nth-child(7) { order: 4; }
-      .ingredient-list li:nth-child(2) { order: 5; }
-      .ingredient-list li:nth-child(4) { order: 6; }
-      .ingredient-list li:nth-child(6) { order: 7; }
+      /* スマホ表示の材料順を指定順に固定 */
+      .ingredient-list li:nth-child(1) { order: 1; } /* 薄力粉 */
+      .ingredient-list li:nth-child(3) { order: 2; } /* ベーキングパウダー */
+      .ingredient-list li:nth-child(5) { order: 3; } /* 塩 */
+      .ingredient-list li:nth-child(2) { order: 4; } /* 生クリーム */
+      .ingredient-list li:nth-child(4) { order: 5; } /* はちみつ */
+      .ingredient-list li:nth-child(6) { order: 6; } /* 打ち粉 */
+      .ingredient-list li:nth-child(7) { order: 7; } /* 仕上げ用 */
       .video-card { grid-template-columns: 82px 1fr; gap: 12px; }
       .steps { grid-template-columns: 1fr; gap: 14px; }
       .step h3 { font-size: 1.05rem; }
